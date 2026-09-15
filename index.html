@@ -1,11 +1,273 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 <head>
-<title>DEIN PUBLISHER-NAME – Unity Assets</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Active Ragdoll 2D — Stick Figure | MenhirStudio</title>
+  <meta name="description" content="A physics-only 2D stick-figure active ragdoll for Unity 6. Eleven rigidbodies driven by muscle-like joint motors — no animation clips, no transform hacks, just physics.">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Active Ragdoll 2D — Stick Figure">
+  <meta property="og:description" content="No animation clips. No transform hacks. Just physics. A wobbly, cartoony active ragdoll for your 2D Unity project.">
+  <meta property="og:url" content="https://menhirstudio.github.io/">
+  <meta property="og:image" content="https://menhirstudio.github.io/images/hero-sword-in-the-stone.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <h1>Test</h1>
-</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Active Ragdoll 2D — home">
+      <img src="images/logo.png" width="44" height="44" alt="">
+      Active Ragdoll 2D
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#demos">Demos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Unity Asset · 2D Physics</span>
+        <h1>Active Ragdoll 2D — Stick Figure</h1>
+        <p class="tagline"><span>No animation clips. No transform hacks. Just physics.</span></p>
+        <p class="lead">
+          Bring the wobbly, cartoony charm of active-ragdoll games to your 2D project.
+          The stick figure is a real ragdoll at all times — eleven rigidbodies driven by
+          muscle-like joint motors, steered through the pelvis — so control stays crisp
+          no matter how floppy you dial the body.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://assetstore.unity.com/packages/slug/398638">Get it on the Unity Asset Store</a>
+          <a class="btn btn-ghost" href="#features">See what's inside</a>
+        </div>
+        <ul class="facts" aria-label="Key facts">
+          <li>Unity 6</li>
+          <li>URP 2D Renderer</li>
+          <li>New Input System</li>
+          <li>Zero image assets</li>
+          <li>Documented C#</li>
+        </ul>
+      </div>
+      <figure class="frame">
+        <img src="images/hero-sword-in-the-stone.jpg" width="1600" height="900"
+             alt="A black stick figure wearing a knight helmet with a red plume and holding a blue shield grips a sword stuck in a stone, in front of a grey castle wall and green hills.">
+        <figcaption>Demo scene 03 — the sword in the stone. Every pixel is drawn from code.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Features</span>
+        <h2>Everything a stick fight needs</h2>
+      </div>
+      <div class="grid">
+        <article class="card feature" style="--c: var(--sage)">
+          <h3><span class="dot"></span>Physics-only locomotion</h3>
+          <p>Procedural walk cycle, jumps and air control. Two balance modes: an easy hover hip, or true self-balancing that can fall and get back up.</p>
+        </article>
+        <article class="card feature" style="--c: var(--gold)">
+          <h3><span class="dot"></span>Floppiness dial</h3>
+          <p>From stiff and controlled to rubber puppet with a single slider — stiffness, strength and damping of all muscles at once.</p>
+        </article>
+        <article class="card feature" style="--c: var(--pennant)">
+          <h3><span class="dot"></span>Impact reactions &amp; knockout</h3>
+          <p>Only the struck region gives way. Hit hard enough and every muscle cuts out — a double-tap on jump wakes the figure again.</p>
+        </article>
+        <article class="card feature" style="--c: var(--shield)">
+          <h3><span class="dot"></span>Items &amp; inventory</h3>
+          <p>Pick up with either hand, throw with spin, carry a ring of weapons on the back, wear headgear. Custom items are one component away.</p>
+        </article>
+        <article class="card feature" style="--c: var(--castle)">
+          <h3><span class="dot"></span>Physical melee</h3>
+          <p>Real arc swings and tip-first thrusts, a two-handed greatsword and an axe, bare-fisted punches — plus blocking with shields and blades.</p>
+        </article>
+        <article class="card feature" style="--c: var(--dusk)">
+          <h3><span class="dot"></span>Ranged weapons</h3>
+          <p>Bow and arrows, a full-auto rifle whose recoil really throws the aim off, and a rocket launcher with knockout blasts.</p>
+        </article>
+        <article class="card feature" style="--c: var(--gold)">
+          <h3><span class="dot"></span>Grab &amp; climb</h3>
+          <p>Grab objects, walls or other figures. Alternate left and right grips to climb ropes, walls.</p>
+        </article>
+        <article class="card feature" style="--c: var(--pennant)">
+          <h3><span class="dot"></span>Health &amp; hit feedback</h3>
+          <p>Modular health system with body-part multipliers, health bars, hit sparks, camera shake, hit flash and splatter in the figure's own colour.</p>
+        </article>
+        <article class="card feature" style="--c: var(--sage)">
+          <h3><span class="dot"></span>9 code-built environments</h3>
+          <p>Day, sunset, night, forest, city, desert, winter, castle and sci-fi — with parallax, props, lighting and a comic outline. Zero image assets.</p>
+        </article>
+        <article class="card feature" style="--c: var(--shield)">
+          <h3><span class="dot"></span>Enemy AI template</h3>
+          <p>A pursuing enemy stickman shows how to drive a figure from code — the starting point for your own brains.</p>
+        </article>
+        <article class="card feature" style="--c: var(--castle)">
+          <h3><span class="dot"></span>One-click generator</h3>
+          <p>GameObject → 2D Active Ragdoll → Stick Figure. Pick size, colour, muscle strength and balance mode, press Create, press Play.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Screenshots</span>
+        <h2>Straight from the demo scenes</h2>
+      </div>
+      <div class="gallery">
+        <figure class="frame">
+          <img src="images/sunset-enemy-sword.jpg" width="1280" height="720" loading="lazy"
+               alt="A green stick figure with a sword faces a red enemy stick figure mid-kick against a pink sunset skyline.">
+          <figcaption>06 Enemy — a pursuing AI stickman</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/night-rocket-launcher.jpg" width="1280" height="720" loading="lazy"
+               alt="A stick figure in a red headband fires a rocket launcher at night; a red enemy figure is blown through the air.">
+          <figcaption>07 Rifle — the rocket launcher knocks out anyone in the blast</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/desert-bow.jpg" width="1280" height="720" loading="lazy"
+               alt="A stick figure aims a bow across desert dunes at ring targets bristling with arrows.">
+          <figcaption>04 Bow — desert archery</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/city-knockout.jpg" width="1280" height="720" loading="lazy"
+               alt="A limp stick figure lies knocked out on the street of an evening city with glowing lanterns.">
+          <figcaption>02 Knockout — past the threshold, every muscle lets go</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/winter-helmet-turret.jpg" width="1280" height="720" loading="lazy"
+               alt="A helmeted stick figure is hit by a turret bolt in a pale winter landscape and tumbles backwards.">
+          <figcaption>05 Helmet &amp; Turret — hard hits knock the helmet off</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO SCENES ============ -->
+  <section id="demos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Demo scenes</span>
+        <h2>Ten scenes, one topic each</h2>
+        <p class="lead">Every scene explains itself with an on-screen help panel. Open one and press Play.</p>
+      </div>
+      <ul class="scenes">
+        <li><code>00</code><span><b>Getting Started</b> — minimal setup, ready to copy</span></li>
+        <li><code>01</code><span><b>Locomotion</b> — run, jump, tune floppiness live</span></li>
+        <li><code>02</code><span><b>Knockout</b> — a ram teaches the K.O. threshold</span></li>
+        <li><code>03</code><span><b>Sword</b> — sword in the stone, weapon rack, melee</span></li>
+        <li><code>04</code><span><b>Bow</b> — desert archery</span></li>
+        <li><code>05</code><span><b>Helmet &amp; Turret</b> — a turret shoots your helmet off</span></li>
+        <li><code>06</code><span><b>Enemy</b> — pursuing AI stickman</span></li>
+        <li><code>07</code><span><b>Rifle</b> — full-auto rifle and rocket launcher</span></li>
+        <li><code>08</code><span><b>Sandbox</b> — everything in one playground</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ REQUIREMENTS & DOCS ============ -->
+  <section id="requirements">
+    <div class="wrap split">
+      <div class="card">
+        <h2 style="font-size:1.5rem">Requirements</h2>
+        <ul class="checklist">
+          <li>Unity 6 (6000.x)</li>
+          <li>Universal Render Pipeline with the 2D Renderer</li>
+          <li>Input System package</li>
+        </ul>
+        <p style="margin-top:1rem">The Built-in Render Pipeline is not supported.</p>
+      </div>
+      <div class="card">
+        <h2 style="font-size:1.5rem">Documentation</h2>
+        <p>A PDF reference plus step-by-step guides, available in the editor under <b>Tools → Active Ragdoll 2D</b>:</p>
+        <ul class="checklist">
+          <li>Getting started — your first figure</li>
+          <li>Build a custom item</li>
+          <li>Write your own enemy AI</li>
+          <li>Dress up a scene</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI NOTE ============ -->
+  <section id="made-with-ai">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">A word on how it was made</span>
+        <h2>Built with AI, tuned by hand</h2>
+      </div>
+      <p class="lead">
+        Large parts of the code and documentation were written with AI assistance — guided by years
+        of being an active-ragdoll fan. Every tuning decision, from muscle feel to knockout thresholds,
+        reflects that hands-on experience.
+      </p>
+      <p class="lead">
+        And because the result is plain, well-documented C# with zero binary assets, AI coding assistants
+        can read and extend the entire package: point yours at the included guides and let it build new
+        weapons, headgear or enemy brains for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <span class="eyebrow">Support &amp; contact</span>
+      <h2>Stuck, found a bug, or built something fun?</h2>
+      <p class="lead">Questions about setup and bug reports are welcome. Please mention your Unity version and, if possible, the demo scene where the issue shows up.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:alexander_hinkelmann@web.de">alexander_hinkelmann@web.de</a>
+        <a class="btn btn-ghost" href="https://assetstore.unity.com/packages/slug/398638">View on the Asset Store</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 MenhirStudio</span>
+    <nav aria-label="Legal">
+      <a href="imprint.html">Imprint</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p class="fine">Unity is a trademark or registered trademark of Unity Technologies. This site is not affiliated with or endorsed by Unity Technologies.</p>
+  </div>
+</footer>
+
+<script>
+  // Floppiness illustration: drives the CSS sway amplitude.
+  (function () {
+    var box = document.getElementById('flop');
+    var range = document.getElementById('flop-range');
+    var out = document.getElementById('flop-out');
+    function update() {
+      box.style.setProperty('--flop', range.value);
+      out.value = Number(range.value).toFixed(2);
+    }
+    range.addEventListener('input', update);
+    update();
+  })();
+</script>
 </body>
 </html>
